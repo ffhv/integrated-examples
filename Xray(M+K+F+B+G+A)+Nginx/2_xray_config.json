@@ -29,7 +29,7 @@
         "security": "reality",
         "realitySettings": {
           "show": false, //选填，若为true输出调试信息。
-          "dest": "/dev/shm/http2.sock", //转发给自己的网站监听进程
+          "dest": "/dev/shm/https.sock", //转发给自己的网站监听进程
           "xver": 2, //开启PROXY protocol发送，发送真实来源IP和端口给自己的网站。1或2表示PROXY protocol版本。
           "serverNames": [ //必填，客户端可用的serverName列表，暂不支持*通配符。
             "zv.xx.yy" //修改为自己的网站域名
