@@ -38,4 +38,4 @@
 
 10、本示例 F 兼容原版 Trojan 应用，即可使用 Trojan 客户端 或 Trojan-Go 客户端对应连接。
 
-11、若已有 Nginx 在用网站、或需要 NaiveProxy 支持 HTTP/3 代理应用，推荐采用 [Xray(M+K+F+B+G+A)+Caddy(N)+Nginx](https://github.com/lxhao61/integrated-examples/tree/new/Xray(M%2BK%2BF%2BB%2BG%2BA)%2BCaddy(N)%2BNginx) 示例。
+11、若已有 Nginx 在用网站、或需要 NaiveProxy 支持 HTTP/3 代理应用，推荐采用 [Xray(M+K+F+B+G+A)+Caddy(N)+Nginx](https://github.com/lxhao61/integrated-examples/tree/main/Xray(M%2BK%2BF%2BB%2BG%2BA)%2BCaddy(N)%2BNginx) 示例。
