@@ -1,6 +1,6 @@
 介绍：
 
-利用 Nginx 支持 SNI 分流特性，对 VLESS+Vision+TLS、Trojan+TCP+TLS、HTTP/2 server 进行 SNI 分流（四层转发），实现除 Xray 的 mKCP 应用外共用 443 端口。其中 Nginx 同时为 VLESS+Vision+TLS 与 Trojan+TCP+TLS 提供回落服务（WEB 服务），为 Xray 的 WebSocket、gRPC 提供反向代理，其应用如下：
+利用 Nginx 支持 SNI 分流特性，对 VLESS+Vision+TLS、Trojan+TCP+TLS、HTTPS server 进行 SNI 分流（四层转发），实现除 Xray 的 mKCP 应用外共用 443 端口。其中 Nginx 同时为 VLESS+Vision+TLS 与 Trojan+TCP+TLS 提供回落服务（WEB 服务），为 Xray 的 WebSocket、gRPC 提供反向代理，其应用如下：
 
 1、E=VLESS+Vision+TLS（回落/分流配置，TLS由自己启用及处理。）
 
