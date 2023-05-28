@@ -58,16 +58,21 @@
             "cipher_suites": ["TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256","TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384","TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256"],
             "curves": ["x25519","secp521r1","secp384r1","secp256r1"]
           }],
+          "trusted_proxies": {
+            "source": "cloudflare", //启用了Cloudflare的CDN配置，需caddy-cloudflare-ip插件支持。
+            "interval": "12h",
+            "timeout": "15s"
+          }, //配置可信CDN服务器的IP范围，实现访问者地址为真实客户端地址。若使用其它非Cloudflare CDN，需自己调整trusted_proxies配置。（可选配）
           "protocols": ["h1","h2"]
         }
       }
     },
     "trojan": {
-      "upstream": {
-        "upstream": "caddy"
-      },
       "proxy": {
         "proxy": "no_proxy"
+      },
+      "upstream": {
+        "upstream": "memory"
       },
       "users": ["diy443"] //修改为自己的密码。密码可多组（"password"），用逗号隔开。
     },
