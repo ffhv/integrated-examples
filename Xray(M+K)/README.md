@@ -12,6 +12,6 @@ Xray 前置（监听 443 端口），利用 VLESS+Vision+REALITY 回落（套娃
 
 2、若目标网站使用外部的，其最低标准：国外网站，支持 TLSv1.3 与 HTTP/2，域名非跳转；是否符合标准可用 [SSL Server Test](https://www.ssllabs.com/ssltest/) 检查。
 
-3、若目标网站使用自己的，网站及关联配置可参考 [Xray(M+K+B+G+A)+Nginx](https://github.com/lxhao61/integrated-examples/tree/new/Xray(M%2BK%2BB%2BG%2BA)%2BNginx) 或 [Xray(M+K+B+G+A)+Caddy(N+T)](https://github.com/lxhao61/integrated-examples/tree/new/Xray(M%2BK%2BB%2BG%2BA)%2BCaddy(N%2BT)) 配置。
+3、若目标网站使用自己的，网站及关联配置可参考 [Xray(M+K+B+G+A)+Nginx](https://github.com/lxhao61/integrated-examples/tree/main/Xray(M%2BK%2BB%2BG%2BA)%2BNginx) 或 [Xray(M+K+B+G+A)+Caddy(N+T)](https://github.com/lxhao61/integrated-examples/tree/main/Xray(M%2BK%2BB%2BG%2BA)%2BCaddy(N%2BT)) 配置。
 
 4、配置1：使用 Local Loopback 连接，且启用了 PROXY protocol。配置2：使用 UDS 连接，且启用了 PROXY protocol。
